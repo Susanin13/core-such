@@ -1,0 +1,530 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    background-color: whitesmoke;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
+    box-sizing: border-box; 
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: whitesmoke;
+    padding: 25px 0;
+    border-bottom: 1px solid black;
+}
+
+.header-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-item:hover {
+    color: rgb(56, 94, 164);
+}
+
+
+.actions {
+    display: flex;
+}
+
+.actions > div {
+    margin-left: 20px;
+}
+
+
+/*===========HEADER============*/
+
+
+/*===========SCROLLBAR============*/
+
+/* width */
+::-webkit-scrollbar {
+    width: 7px;
+}
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(50, 50, 50); 
+    border-radius: 10px;
+}
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(75, 75, 75);
+}
+
+/*===========SCROLLBAR============*/
+
+
+
+
+/*===========CARD============*/
+
+.card {
+    box-sizing: border-box;
+    position: relative;
+    color: #333;
+    position: absolute;
+    top: 200px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 580px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Выравнивание по верхнему краю */
+}
+
+.image {
+    height: 500px;
+    width: 500px;
+    background-image: url(https://optim.tildacdn.com/tild6136-3934-4462-b737-633836323435/-/format/webp/71asGX7OK0L_SL1500_.jpg);
+    background-size: cover;
+}
+
+.lp-info {
+    width: 600px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 61px;
+}
+
+.lp-name {
+    color: rgb(34, 69, 121);
+    margin: 30px 0 0 0;
+    font-size: 55px;
+}
+
+.lp-format {
+    color: rgb(34, 69, 121);
+    font-size: 24px;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.lp-pricetag {
+    color: rgb(34, 69, 121);
+    font-size: 24px;
+    font-weight: 300;
+    display: flex;
+    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0 0 0;
+}
+
+.price {
+    font-size: 36px;
+    font-weight: 500;
+    color: #333;
+    display: flex;
+    justify-content: left;
+    margin: 0 0 0 0;
+}
+
+.buy {
+    margin-top: 40px;
+    width: 180px;
+    height: 50px;
+}
+
+.button-buy {
+    display: block;
+    background-color: rgb(56, 94, 164);
+    color: white;
+    font-size: 18px;
+    padding: 12px 60px 12px 60px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 8px; 
+    transition: background-color 0.3s ease; 
+}
+
+.button-buy:hover {
+    background-color: cornflowerblue;
+}
+
+
+/* CSS для выпадающих меню */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border-bottom: #333 2px solid;
+    width: 300px;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: #333;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    border-bottom: black 2px solid;
+    width: 300px;
+}
+
+.dropbtn:hover {
+    background-color: rgba(1, 1, 1, 0);
+}
+
+.dropbtn::after {
+    content: url('arrow-down.png'); /* Стрелка по умолчанию */
+    margin-left: 6px;
+    margin-top: 12px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+}
+
+.dropdown-content p {
+    color: #333;
+    padding: 10px;
+    width: 400px;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Стили для подчеркивания */
+.dropbtn::after {
+    content: url('arrow-down.png'); /* Стрелка по умолчанию */
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+    transition: transform 0.3s ease; /* Плавное изменение поворота при наведении */
+}
+
+.dropbtn:hover::after {
+    transform: rotate(180deg); /* Поворот стрелки при наведении */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 0px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-top: 1px solid #ccc;
+    width: max-content;
+}
+
+.dropdown-content p {
+    color: #333;
+    padding: 10px;
+    margin: 0;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Подчеркивание */
+.dropdown {
+    position: relative;
+}
+
+.dropbtn::after {
+    content: url('arrow-down.png'); /* Стрелка по умолчанию */
+    display: inline-block;
+    margin-left: 6px;
+    vertical-align: middle;
+    transition: transform 0.3s ease; /* Плавное изменение поворота при наведении */
+}
+
+.dropbtn:hover::after {
+    transform: rotate(180deg); /* Поворот стрелки при наведении */
+}
+
+
+
+.dropbtn {
+    border-bottom: 2px solid transparent; /* Подчеркивание по умолчанию */
+}
+
+.dropbtn:hover {
+    border-bottom-color: #333; /* Изменение цвета подчеркивания при наведении */
+}
+   
+
+/*===========CARD============*/
+
+
+/*========DESCRIPTION=========*/
+
+.description {
+    display: block;
+    color: #333;
+    position: absolute;
+    top: 780px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 580px;
+}
+
+.description-info {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.tracks {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.track-number {
+    font-size: 24px;
+    margin-right: 15px;
+    font-weight: 500;
+    color: rgb(41, 67, 114);
+}
+
+.tracks-main-title {
+    font-size: 32px;
+    font-weight: 450;
+    color: rgb(41, 67, 114);
+}
+
+.track-title {
+    font-weight: 300;
+    margin-left: 5px;
+    color: #333;
+}
+
+.album-description {
+    margin-top: 15px;
+    font-size: 22px;
+    width: 900px;
+    color: #717171;
+}
+
+/*=========DESCRIPTION=========*/
+
+
+/*=========COMMENTS=========*/
+
+.comments {
+    display: block;
+    color: #333;
+    position: absolute;
+    top: 1400px;
+    left: 50%; 
+    transform: translateX(-50%);
+    width: 1200px;
+    height: 450px;
+}
+
+.comment {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-details {
+    flex: 1;
+    height: 120px;
+}
+
+.comment-details h3 {
+    margin: 0;
+}
+.like-dislike {
+    display: flex;
+    flex-direction: row;
+}
+.like,
+.dislike {
+    cursor: pointer;
+    scale: 0.75;
+    display: flex;
+    align-items: center;
+}
+
+.like:hover,
+.dislike:hover {
+    opacity: 0.7;
+}
+
+.like-counter,
+.dislike-counter {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.new-comment {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.new-comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-input {
+    width: 450px;
+    display: flex;
+    align-items: center; /* Изменено, чтобы элементы были по вертикали выровнены */
+}
+
+.comment-input input[type="text"] {
+    flex-grow: 1; /* Добавлено, чтобы input занимал всю доступную ширину */
+    padding: 10px;
+    width: 400px;
+    background-color: rgba(1, 1, 1, 0);
+    border: none;
+    outline: none;
+    font-size: 16px;
+    margin-right: 10px; /* Добавлено, чтобы создать отступ между input и кнопкой */
+    border-bottom: #333 2px solid;
+}
+
+
+button[type="submit"] {
+  background-color: rgb(46, 78, 136);
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+    background-color: rgb(61, 101, 176);
+}
+
+.underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 20px); /* Ширина underline с учетом отступов */
+    height: 2px;
+    background-color: #333;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+
+/*=========COMMENTS=========*/
+
+
+/* ===========FOOTER============ */
+
+.footer {
+    background-color: rgb(33, 67, 118);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    top: 2000px;
+    height: 300px;
+    width: 1200px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-left {
+    display: flex;
+    flex-direction: row;
+}
+
+.top-left > div {
+    margin-right: 20px;
+}
+
+.top-left > div:last-child {
+    margin-right: 0;
+}
+
+.bottom-bar {
+    height: 2px;
+    background-color: #989696;
+    width: 90%;
+    position: absolute;
+    bottom: 80px;
+    left: 5%;
+}
+
+.top-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.icon {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ===========FOOTER============ */

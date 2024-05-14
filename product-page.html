@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product-style.css">
+    <link rel="stylesheet" href="rubik feont/Rubik-VariableFont_wght.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <div class="container">
+            <div class="header-line">
+              <div class="nav">
+                <a class="nav-item" href="account.html">Аккаунт</a>
+              </div>
+    
+              <div class="header-logo">
+                <a href="index.html"><img src="The Sound.png" alt=""></a>
+              </div>
+              <div class="actions">
+                <div class="cart"> 
+                  <a href="checkout.html">
+                    <img src="cart.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="card">
+        <div class="image"></div>
+        <div class="lp-info">
+            <div class="lp-name"><span style="font-size: 45px;"></span></div>
+            <div class="lp-format">Формат: LP</div>
+            <div class="lp-pricetag">
+                Цена:
+                <div class="price">130 руб.</div>
+            </div>
+            <div class="buy" onclick="addCart()"><a class="button-buy" >В корзину</a></div>
+
+            <div class="dropdown">
+                <button class="dropbtn"><p class="dropdown-title">Политика возврата</p></button>
+                <div class="dropdown-content">
+                    <p>Мы гарантируем полный возврат средств в течение 30 дней с момента покупки. Просто верните товар в исходном состоянии с упаковкой</p>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><p class="dropdown-title">Доставка</p></button>
+                <div class="dropdown-content">
+                    <p>Мы предлагаем бесплатную доставку для всех заказов свыше $50. Доставка занимает обычно от 3 до 5 рабочих дней.</p>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="dropbtn"><p class="dropdown-title">Задать вопрос</p></button>
+                <div class="dropdown-content">
+                    <p>Есть вопросы? Не стесняйтесь обращаться! Наша команда поддержки клиентов готова помочь вам с любыми вопросами или запросами.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="description">
+        <div class="description-info">
+            Жанр: Инди<br>Год издания: 2022<br>Издание: Columbia<br>Категория: Альбом
+        </div>
+        <div class="tracks">
+            <span class="tracks-main-title">Композиции:</span> <br> <div class="track-number">1.1 <span class="track-title" style="margin-left: 12px;"> Age Of Anxiety I</span></div>  <div class="track-number">1.2 <span class="track-title">Age Of Anxiety II (Rabbit Hole)</span></div>      <div class="track-number">1.3 <span class="track-title">End Of The Empire I-IV</span></div> <div class="track-number">2.1 <span class="track-title">The Lightning I, II</span></div> <div class="track-number">2.2 <span class="track-title">Unconditional I (Lookout Kid)</span></div> <div class="track-number">2.3 <span class="track-title">Unconditional II (Race And Religion)</span></div> <div class="track-number">2.4 <span class="track-title">WE</span></div>
+        </div>
+
+        <div class="album-description">
+            Альбом 'We' от Arcade Fire – это музыкальное путешествие, которое охватывает слушателя своей глубиной и эмоциональной интенсивностью. Каждый трек альбома переносит нас в новую атмосферу, раскрывая мощные мелодии и захватывающие тексты песен. От энергичных ритмов до меланхоличных мелодий, 'We' удивляет своим разнообразием и непредсказуемостью, оставляя слушателя погруженным в глубокое музыкальное погружение.
+        </div>
+    </div>
+
+    <div class="comments">
+        <h2 style="color: rgb(41, 67, 114)">Комментарии:</h2>
+        <div class="comment">
+            <img src="avatar1.png" alt="Avatar">
+            <div class="comment-details">
+                <h3>Имя пользователя</h3>
+                <p>Текст комментария</p>
+                <div class="like-dislike">
+                    <div class="like">
+                    <img class="like" src="like.png" alt="like">
+                    <span class="like-counter">0</span>
+                    </div>
+                    <div class="dislike">
+                    <img class="dislike" src="dislike.png" alt="dislike">
+                    <span class="dislike-counter">0</span>
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- Здесь могут быть другие комментарии -->
+        <h2 style="color: rgb(41, 67, 114);">Ваш комментарий:</h2>
+        <div class="new-comment">
+            <img src="your-avatar.png" alt="Your Avatar">
+        
+            <div class="comment-input">
+                <div class="input-wrapper">
+                    <input type="text" id="text" placeholder="Есть, что сказать?">
+                        
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button type="submit">Отправить</button>
+                </div>
+            </div>
+    </div>
+        
+    </div>
+    
+
+
+    <footer>
+        <div class="footer">
+          <div class="top-left">
+              <div>
+                  <p>О компании</p>
+                  <p>Реклама</p>
+                  <p>The Sound.</p>
+                  <p>Все права защищены</p>
+                  <p>2024</p>
+              </div>
+              <div>
+                  <p>Связь</p>
+                  <p>+375 33 76 39 363</p>
+                  <p>+375 33 76 39 343(СМС)</p>
+                  <p>help@thesound.com</p>
+              </div>
+          </div>
+          <div class="bottom-bar"></div>
+          <div class="top-right">
+              <img src="social.png" alt="">
+          </div>
+          <div class="bottom-right">
+  
+            <div style="margin-right: 20px;">
+              Условия продажи 
+            </div>
+  
+            <div style="margin-right: 20px;">
+              Политика приватности
+            </div>
+  
+            <div>
+              Доп. информация 
+            </div>
+            
+          </div>
+      </div>
+      </footer>
+      
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

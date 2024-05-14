@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Sound</title>
+    <link rel="stylesheet" href="rubik feont/Rubik-VariableFont_wght.ttf">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="container">
+        <div class="header-line">
+          <div class="nav">
+            <a class="nav-item" href="account.html">Аккаунт</a>
+          </div>
+
+          <div class="header-logo">
+            <a href="index.html"><img src="The Sound.png" alt=""></a>
+          </div>
+          <div class="actions">
+            <div class="cart"> 
+              <a href="checkout.html">
+                <img src="cart.png" alt="">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+      <section>
+        <div class="week-container">
+          <div class="container">
+            <div class="home-info">
+              <div class="home-title">Артист недели</div>
+              <div class="home-artist">The Smile</div>
+              <div class="button-info-div"><a class="button-info" style="color: whitesmoke;" href="https://ru.wikipedia.org/wiki/The_Smile_(%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0)">Подробнее</a></div>
+            </div>
+          </div>
+        </div>  
+      </section>
+
+      <div class="favorite-genres">
+          <div class="container">
+              <h2>Любимые жанры</h2>
+              <div class="genre-tabs">
+                  <div class="genre-tab" onclick="showGenre('indie')">Инди</div>
+                  <div class="genre-tab" onclick="showGenre('pop')">Поп</div>
+                  <div class="genre-tab" onclick="showGenre('jazz')">Джаз</div>
+                  <div class="tab-underline indie-underline"></div>
+                  <div class="tab-underline pop-underline"></div>
+                  <div class="tab-underline jazz-underline"></div>
+  
+              </div>
+              <div class="product-cards indie">
+                  <a href="product-page.html" style="text-decoration: none;">
+                    <div class="product-card">
+                      <img class="product-card-img" src="https://optim.tildacdn.com/tild6432-6264-4739-a134-313132393138/-/resize/664x/-/format/webp/f49d64c964c73b8c11c9.jpg" alt="">
+                      <div class="label-underline">
+                        Bleachers: <br> <span style="font-size: 18px;">Take The Sadness Out</span>
+                      </div>
+                      <div class="price">29$</div>
+                  </div>
+                  </a>
+
+                  <div class="line"></div>
+
+                  <a href="product-page.html" style="text-decoration: none;">
+                    <div class="product-card">
+                      <img class="product-card-img" src="https://optim.tildacdn.com/tild6632-3263-4366-b932-363239656631/-/resize/664x/-/format/webp/babyshambles-shotter.jpg" alt="">
+                      <div class="label-underline">
+                        Babyshambles: <br><span style="font-size: 18px;">Shooter's Nation</span>
+                      </div>
+                      <div class="price">27$</div>
+                    </div>
+                  </a>
+                
+                  
+                  <a href="product-page.html" style="text-decoration: none;">
+                    <div class="product-card">
+                      <img class="product-card-img" src="https://optim.tildacdn.com/tild6136-3934-4462-b737-633836323435/-/resize/664x/-/format/webp/71asGX7OK0L_SL1500_.jpg" alt="">
+                      <div class="label-underline">
+                        Arcade Fire: <span style="font-size: 18px;">We</span>
+                      </div>
+                      <div class="price">25$</div>
+                    </div>
+                  </a>
+                  
+              </div>
+              <div class="product-cards pop" style="display: none;">
+                  <div class="product-card">
+                    <img class="product-card-img" src="http://longplay.by/assets/images/33/x-a-ha-lifelines.7fd.jpg" alt="">
+                    <div class="label-underline">
+                      a-ha: <span style="font-size: 18px;">Lifelines</span>
+                    </div>
+                    <div class="price">39$</div>
+                  </div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="http://longplay.by/assets/images/35/x-r-396623-1489577952-2314.7fd.jpg" alt="">
+                    <div class="label-underline">
+                      ABBA: <span style="font-size: 18px;">Arrival</span>
+                    </div>
+                    <div class="price">39$</div>
+                  </div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="http://longplay.by/assets/images/33/x-bryan-adams-cuts-like-a-knife.7fd.jpg" alt="">
+                    <div class="label-underline">
+                      Bryan Adams: <br><span style="font-size: 18px;">Cuts Like a Knife</span>
+                    </div>
+                    <div class="price">29$</div>
+                  </div>
+              </div>
+              <div class="product-cards jazz" style="display: none;">
+                  <div class="product-card">
+                    <img class="product-card-img" src="https://optim.tildacdn.com/tild3765-3539-4263-b130-373330636233/-/resize/664x/-/format/webp/CS699682-01A-BIG.jpg" alt="">
+                    <div class="label-underline">
+                      Louis Armstrong: <br>T<span style="font-size: 18px;">he Very Best Of</span>
+                    </div>
+                    <div class="price">39$</div>
+                  </div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="https://optim.tildacdn.com/tild6632-6533-4432-a530-623130313465/-/resize/664x/-/format/webp/miles-davis-kind-of-.jpg" alt="">
+                    <div class="label-underline">
+                      Miles Davis: <br><span style="font-size: 18px;">Kind of Blue</span>
+                    </div>
+                    <div class="price">29$</div>
+                  </div>
+                  <div class="product-card">
+                    <img class="product-card-img" src="https://optim.tildacdn.com/stor3530-6136-4235-b937-376631363436/-/resize/1280x/-/format/webp/24828824.png" alt="">
+                    <div class="label-underline">
+                      Oscar Peterson Trio: <br><span style="font-size: 18px;">Night Train</span>
+                    </div>
+                    <div class="price">22$</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+<!-- 
+      <div class="anniversasry-container">
+        <div class="anniversary-info">
+          <div class="anniversary-title">Артист недели</div>
+          <div class="anniversary-artist">The Smile</div>
+          <div class="anniversary-button-info-div"><a class="anniversary-button-info" href="#">Подробнее</a></div>
+        </div>
+      </div> -->
+
+      <div class="anniversary-container">
+        <div class="anniversary-background"></div>
+
+          <div class="anniversary-info">
+            <div class="anniversary-title">Thundercat: Apocalypse</div>
+            <div class="anniversary-artist">Издание "Ten Years Anniversary"</div>
+          </div>
+        
+      </div>
+
+      <div class="arrivals-container">
+        <h2>Новинки</h2>
+        <div class="new-arrivals">
+          <div class="product-cards-indie">
+            <a href="product-page.html" style="text-decoration: none;">
+              <div class="product-card">
+                <img class="product-card-img" src="https://optim.tildacdn.com/tild6432-6264-4739-a134-313132393138/-/resize/664x/-/format/webp/f49d64c964c73b8c11c9.jpg" alt="">
+                <div class="label-underline">
+                  Bleachers: <br> <span style="font-size: 18px;">Take The Sadness Out</span>
+                </div>
+                <div class="price">29$</div>
+            </div>
+            </a>
+
+            <div class="line"></div>
+
+            <a href="product-page.html" style="text-decoration: none;">
+              <div class="product-card">
+                <img class="product-card-img" src="https://optim.tildacdn.com/tild6632-3263-4366-b932-363239656631/-/resize/664x/-/format/webp/babyshambles-shotter.jpg" alt="">
+                <div class="label-underline">
+                  Babyshambles: <br><span style="font-size: 18px;">Shooter's Nation</span>
+                </div>
+                <div class="price">27$</div>
+              </div>
+            </a>
+          
+            
+            <a href="product-page.html" style="text-decoration: none;">
+              <div class="product-card">
+                <img class="product-card-img" src="https://optim.tildacdn.com/tild6136-3934-4462-b737-633836323435/-/resize/664x/-/format/webp/71asGX7OK0L_SL1500_.jpg" alt="">
+                <div class="label-underline">
+                  Arcade Fire: <span style="font-size: 18px;">We</span>
+                </div>
+                <div class="price">25$</div>
+              </div>
+            </a>
+            
+          </div>
+        </div>
+      </div>
+      
+      <div class="dibs">
+        <div class="dibs-title">
+          <div class="title1">Хотите быть в курсе событий?</div> 
+          <div class="title2">Подпишитесь на нашу рассылку по EMail, чтобы узнавать новости <div class="title3">первым!</div></div>
+          <div class="email-form">
+            <div class="input-wrapper">
+              <input type="email" id="email" placeholder="Ваш Email">
+              <div class="underline"></div>
+            </div>
+            <div class="button-wrapper">
+              <button type="submit" onclick="subscribe()">Подписаться</button>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+
+
+      <footer>
+        <div class="footer">
+          <div class="top-left">
+              <div>
+                  <p>О компании</p>
+                  <p>Реклама</p>
+                  <p>The Sound.</p>
+                  <p>Все права защищены</p>
+                  <p>2024</p>
+              </div>
+              <div>
+                  <p>Связь</p>
+                  <p>+375 33 76 39 363</p>
+                  <p>+375 33 76 39 343(СМС)</p>
+                  <p>help@thesound.com</p>
+              </div>
+          </div>
+          <div class="bottom-bar"></div>
+          <div class="top-right">
+              <img src="social.png" alt="">
+          </div>
+          <div class="bottom-right">
+  
+            <div style="margin-right: 20px;">
+              Условия продажи 
+            </div>
+  
+            <div style="margin-right: 20px;">
+              Политика приватности
+            </div>
+  
+            <div>
+              Доп. информация 
+            </div>
+            
+          </div>
+      </div>
+      </footer>   
+    
+      
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
